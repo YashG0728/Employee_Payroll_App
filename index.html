@@ -149,5 +149,14 @@
         <button type="reset" class="resetButton button">Reset</button>
       </div>
     </div>
-      </body>
+    <script>
+      window.addEventListener('DOMContentLoaded', (event) => {
+    const salary = document.querySelector("#salary");
+    const output = document.querySelector('.salary-output');
+    salary.addEventListener('input', function () {
+        output.textContent = salary.value;
+    });
+})
+  </script>
+  </body>
   </html>
